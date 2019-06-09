@@ -1,0 +1,353 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6CD8D0B7-7234-3E8B-8FF0-920342425473}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\Download\glfw-3.3\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/Download/glfw-3.3/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"E:\Kasug\Program Files\CMake\bin\cmake.exe" -SE:/Download/glfw-3.3 -BE:/Kasug/Code/LearnOpenGL/Libaray --check-stamp-file E:/Kasug/Code/LearnOpenGL/Libaray/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\Download\glfw-3.3\cmake_uninstall.cmake.in;E:\Download\glfw-3.3\src\glfw3.pc.in;E:\Download\glfw-3.3\src\glfw3Config.cmake.in;E:\Download\glfw-3.3\src\glfw_config.h.in;E:\Kasug\Code\LearnOpenGL\Libaray\CMakeFiles\3.15.0-rc1\CMakeCCompiler.cmake;E:\Kasug\Code\LearnOpenGL\Libaray\CMakeFiles\3.15.0-rc1\CMakeRCCompiler.cmake;E:\Kasug\Code\LearnOpenGL\Libaray\CMakeFiles\3.15.0-rc1\CMakeSystem.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeCCompiler.cmake.in;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeCCompilerABI.c;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeCInformation.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeCommonLanguageInclude.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeCompilerIdDetection.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeDetermineCCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeDetermineCompileFeatures.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeDetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeDetermineCompilerABI.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeDetermineCompilerId.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeDetermineRCCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeDetermineSystem.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeFindBinUtils.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeGenericSystem.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeInitializeConfigs.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeLanguageInformation.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakePackageConfigHelpers.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeParseImplicitIncludeInfo.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeParseImplicitLinkInfo.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeRCCompiler.cmake.in;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeRCInformation.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeSystem.cmake.in;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeSystemSpecificInformation.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeSystemSpecificInitialize.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeTestCCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeTestCompilerCommon.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeTestRCCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CheckCSourceCompiles.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CheckIncludeFile.c.in;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CheckIncludeFile.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CheckLibraryExists.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\ADSP-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\ARMCC-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\ARMClang-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\AppleClang-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\Borland-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\Clang-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\Cray-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\GHS-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\GNU-C-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\HP-C-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\IAR-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\Intel-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\MSVC-C.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\MSVC-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\PGI-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\PathScale-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\SCO-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\TI-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\Watcom-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\XL-C-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\zOS-C-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CompilerId\VS-10.vcxproj.in;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\FindDoxygen.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\FindPackageHandleStandardArgs.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\FindPackageMessage.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\FindThreads.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\GNUInstallDirs.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Internal\FeatureTesting.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC-C.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Platform\WindowsPaths.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\WriteBasicConfigVersionFile.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\Kasug\Code\LearnOpenGL\Libaray\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/Download/glfw-3.3/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"E:\Kasug\Program Files\CMake\bin\cmake.exe" -SE:/Download/glfw-3.3 -BE:/Kasug/Code/LearnOpenGL/Libaray --check-stamp-file E:/Kasug/Code/LearnOpenGL/Libaray/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\Download\glfw-3.3\cmake_uninstall.cmake.in;E:\Download\glfw-3.3\src\glfw3.pc.in;E:\Download\glfw-3.3\src\glfw3Config.cmake.in;E:\Download\glfw-3.3\src\glfw_config.h.in;E:\Kasug\Code\LearnOpenGL\Libaray\CMakeFiles\3.15.0-rc1\CMakeCCompiler.cmake;E:\Kasug\Code\LearnOpenGL\Libaray\CMakeFiles\3.15.0-rc1\CMakeRCCompiler.cmake;E:\Kasug\Code\LearnOpenGL\Libaray\CMakeFiles\3.15.0-rc1\CMakeSystem.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeCCompiler.cmake.in;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeCCompilerABI.c;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeCInformation.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeCommonLanguageInclude.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeCompilerIdDetection.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeDetermineCCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeDetermineCompileFeatures.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeDetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeDetermineCompilerABI.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeDetermineCompilerId.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeDetermineRCCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeDetermineSystem.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeFindBinUtils.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeGenericSystem.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeInitializeConfigs.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeLanguageInformation.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakePackageConfigHelpers.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeParseImplicitIncludeInfo.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeParseImplicitLinkInfo.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeRCCompiler.cmake.in;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeRCInformation.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeSystem.cmake.in;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeSystemSpecificInformation.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeSystemSpecificInitialize.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeTestCCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeTestCompilerCommon.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeTestRCCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CheckCSourceCompiles.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CheckIncludeFile.c.in;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CheckIncludeFile.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CheckLibraryExists.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\ADSP-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\ARMCC-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\ARMClang-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\AppleClang-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\Borland-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\Clang-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\Cray-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\GHS-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\GNU-C-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\HP-C-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\IAR-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\Intel-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\MSVC-C.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\MSVC-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\PGI-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\PathScale-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\SCO-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\TI-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\Watcom-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\XL-C-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\zOS-C-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CompilerId\VS-10.vcxproj.in;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\FindDoxygen.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\FindPackageHandleStandardArgs.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\FindPackageMessage.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\FindThreads.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\GNUInstallDirs.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Internal\FeatureTesting.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC-C.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Platform\WindowsPaths.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\WriteBasicConfigVersionFile.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\Kasug\Code\LearnOpenGL\Libaray\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/Download/glfw-3.3/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"E:\Kasug\Program Files\CMake\bin\cmake.exe" -SE:/Download/glfw-3.3 -BE:/Kasug/Code/LearnOpenGL/Libaray --check-stamp-file E:/Kasug/Code/LearnOpenGL/Libaray/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\Download\glfw-3.3\cmake_uninstall.cmake.in;E:\Download\glfw-3.3\src\glfw3.pc.in;E:\Download\glfw-3.3\src\glfw3Config.cmake.in;E:\Download\glfw-3.3\src\glfw_config.h.in;E:\Kasug\Code\LearnOpenGL\Libaray\CMakeFiles\3.15.0-rc1\CMakeCCompiler.cmake;E:\Kasug\Code\LearnOpenGL\Libaray\CMakeFiles\3.15.0-rc1\CMakeRCCompiler.cmake;E:\Kasug\Code\LearnOpenGL\Libaray\CMakeFiles\3.15.0-rc1\CMakeSystem.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeCCompiler.cmake.in;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeCCompilerABI.c;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeCInformation.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeCommonLanguageInclude.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeCompilerIdDetection.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeDetermineCCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeDetermineCompileFeatures.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeDetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeDetermineCompilerABI.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeDetermineCompilerId.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeDetermineRCCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeDetermineSystem.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeFindBinUtils.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeGenericSystem.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeInitializeConfigs.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeLanguageInformation.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakePackageConfigHelpers.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeParseImplicitIncludeInfo.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeParseImplicitLinkInfo.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeRCCompiler.cmake.in;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeRCInformation.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeSystem.cmake.in;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeSystemSpecificInformation.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeSystemSpecificInitialize.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeTestCCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeTestCompilerCommon.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeTestRCCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CheckCSourceCompiles.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CheckIncludeFile.c.in;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CheckIncludeFile.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CheckLibraryExists.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\ADSP-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\ARMCC-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\ARMClang-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\AppleClang-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\Borland-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\Clang-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\Cray-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\GHS-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\GNU-C-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\HP-C-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\IAR-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\Intel-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\MSVC-C.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\MSVC-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\PGI-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\PathScale-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\SCO-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\TI-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\Watcom-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\XL-C-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\zOS-C-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CompilerId\VS-10.vcxproj.in;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\FindDoxygen.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\FindPackageHandleStandardArgs.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\FindPackageMessage.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\FindThreads.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\GNUInstallDirs.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Internal\FeatureTesting.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC-C.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Platform\WindowsPaths.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\WriteBasicConfigVersionFile.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\Kasug\Code\LearnOpenGL\Libaray\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/Download/glfw-3.3/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"E:\Kasug\Program Files\CMake\bin\cmake.exe" -SE:/Download/glfw-3.3 -BE:/Kasug/Code/LearnOpenGL/Libaray --check-stamp-file E:/Kasug/Code/LearnOpenGL/Libaray/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\Download\glfw-3.3\cmake_uninstall.cmake.in;E:\Download\glfw-3.3\src\glfw3.pc.in;E:\Download\glfw-3.3\src\glfw3Config.cmake.in;E:\Download\glfw-3.3\src\glfw_config.h.in;E:\Kasug\Code\LearnOpenGL\Libaray\CMakeFiles\3.15.0-rc1\CMakeCCompiler.cmake;E:\Kasug\Code\LearnOpenGL\Libaray\CMakeFiles\3.15.0-rc1\CMakeRCCompiler.cmake;E:\Kasug\Code\LearnOpenGL\Libaray\CMakeFiles\3.15.0-rc1\CMakeSystem.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeCCompiler.cmake.in;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeCCompilerABI.c;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeCInformation.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeCommonLanguageInclude.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeCompilerIdDetection.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeDetermineCCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeDetermineCompileFeatures.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeDetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeDetermineCompilerABI.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeDetermineCompilerId.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeDetermineRCCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeDetermineSystem.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeFindBinUtils.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeGenericSystem.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeInitializeConfigs.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeLanguageInformation.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakePackageConfigHelpers.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeParseImplicitIncludeInfo.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeParseImplicitLinkInfo.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeRCCompiler.cmake.in;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeRCInformation.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeSystem.cmake.in;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeSystemSpecificInformation.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeSystemSpecificInitialize.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeTestCCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeTestCompilerCommon.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CMakeTestRCCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CheckCSourceCompiles.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CheckIncludeFile.c.in;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CheckIncludeFile.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CheckLibraryExists.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\ADSP-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\ARMCC-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\ARMClang-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\AppleClang-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\Borland-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\Clang-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\Cray-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\GHS-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\GNU-C-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\HP-C-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\IAR-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\Intel-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\MSVC-C.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\MSVC-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\PGI-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\PathScale-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\SCO-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\TI-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\Watcom-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\XL-C-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Compiler\zOS-C-DetermineCompiler.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\CompilerId\VS-10.vcxproj.in;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\FindDoxygen.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\FindPackageHandleStandardArgs.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\FindPackageMessage.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\FindThreads.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\GNUInstallDirs.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Internal\FeatureTesting.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC-C.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\Platform\WindowsPaths.cmake;E:\Kasug\Program Files\CMake\share\cmake-3.15\Modules\WriteBasicConfigVersionFile.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\Kasug\Code\LearnOpenGL\Libaray\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\Kasug\Code\LearnOpenGL\Libaray\ZERO_CHECK.vcxproj">
+      <Project>{90DCC745-5D58-30AF-8BB8-B61269C21212}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Kasug\Code\LearnOpenGL\Libaray\examples\boing.vcxproj">
+      <Project>{3FF15401-EBFF-3ABB-B180-E25BB5739F40}</Project>
+      <Name>boing</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Kasug\Code\LearnOpenGL\Libaray\tests\clipboard.vcxproj">
+      <Project>{876294EF-8CB3-3829-B91A-718AB455E4A4}</Project>
+      <Name>clipboard</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Kasug\Code\LearnOpenGL\Libaray\tests\cursor.vcxproj">
+      <Project>{4370497C-77C7-35B0-8786-C48D3D133C1D}</Project>
+      <Name>cursor</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Kasug\Code\LearnOpenGL\Libaray\tests\empty.vcxproj">
+      <Project>{0A643464-DFD0-3608-B723-97B62C70E0C2}</Project>
+      <Name>empty</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Kasug\Code\LearnOpenGL\Libaray\tests\events.vcxproj">
+      <Project>{BACF46ED-0D20-3A47-8F09-89E0186D8479}</Project>
+      <Name>events</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Kasug\Code\LearnOpenGL\Libaray\tests\gamma.vcxproj">
+      <Project>{CB54D07D-E5B0-34A9-A2BA-01226395ACF4}</Project>
+      <Name>gamma</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Kasug\Code\LearnOpenGL\Libaray\examples\gears.vcxproj">
+      <Project>{2737FE95-7B9A-31A1-B3BC-CD971C9425C8}</Project>
+      <Name>gears</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Kasug\Code\LearnOpenGL\Libaray\src\glfw.vcxproj">
+      <Project>{0C47E592-9DF2-3A48-9944-C7778A38D1E4}</Project>
+      <Name>glfw</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Kasug\Code\LearnOpenGL\Libaray\tests\glfwinfo.vcxproj">
+      <Project>{A4E8C7F2-CD4C-30C7-B71F-90BC8E73265F}</Project>
+      <Name>glfwinfo</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Kasug\Code\LearnOpenGL\Libaray\examples\heightmap.vcxproj">
+      <Project>{32F7E9DB-D9F0-3A88-8D94-63FB87F587BD}</Project>
+      <Name>heightmap</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Kasug\Code\LearnOpenGL\Libaray\tests\icon.vcxproj">
+      <Project>{36ED9582-BD26-3FD8-82E1-E65FDF81B01F}</Project>
+      <Name>icon</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Kasug\Code\LearnOpenGL\Libaray\tests\iconify.vcxproj">
+      <Project>{A81A7FB3-0D99-32E8-8676-AD319129B328}</Project>
+      <Name>iconify</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Kasug\Code\LearnOpenGL\Libaray\tests\inputlag.vcxproj">
+      <Project>{A2253F3D-4AF7-323A-A7F1-38B80D104F16}</Project>
+      <Name>inputlag</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Kasug\Code\LearnOpenGL\Libaray\tests\joysticks.vcxproj">
+      <Project>{3E93CB6C-DB46-3EF3-A96D-163E9264546A}</Project>
+      <Name>joysticks</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Kasug\Code\LearnOpenGL\Libaray\tests\monitors.vcxproj">
+      <Project>{028B79C8-2090-3982-8437-0399BE64CF80}</Project>
+      <Name>monitors</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Kasug\Code\LearnOpenGL\Libaray\tests\msaa.vcxproj">
+      <Project>{C0D5F748-91FB-3ABB-853E-46338F0CA90E}</Project>
+      <Name>msaa</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Kasug\Code\LearnOpenGL\Libaray\examples\offscreen.vcxproj">
+      <Project>{0FF415CA-4E7D-3C7B-9762-AA20902A014D}</Project>
+      <Name>offscreen</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Kasug\Code\LearnOpenGL\Libaray\tests\opacity.vcxproj">
+      <Project>{B1BD3B69-41AB-3CDA-82CC-6FBB9A44BA21}</Project>
+      <Name>opacity</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Kasug\Code\LearnOpenGL\Libaray\examples\particles.vcxproj">
+      <Project>{B3B3B444-8610-3F54-AA9B-D45181EF9540}</Project>
+      <Name>particles</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Kasug\Code\LearnOpenGL\Libaray\tests\reopen.vcxproj">
+      <Project>{DCC03293-B7F4-3AF3-9C34-91C071EC06EA}</Project>
+      <Name>reopen</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Kasug\Code\LearnOpenGL\Libaray\examples\sharing.vcxproj">
+      <Project>{42B767D0-984C-3DA1-959B-15465F5EFC90}</Project>
+      <Name>sharing</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Kasug\Code\LearnOpenGL\Libaray\examples\simple.vcxproj">
+      <Project>{977A42F5-3EDA-36D9-BC02-9DE0D72B0EE8}</Project>
+      <Name>simple</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Kasug\Code\LearnOpenGL\Libaray\examples\splitview.vcxproj">
+      <Project>{B0C1024D-6690-3FA0-A1CB-59218F571385}</Project>
+      <Name>splitview</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Kasug\Code\LearnOpenGL\Libaray\tests\tearing.vcxproj">
+      <Project>{6D35E935-93A7-315D-BE18-C5B10C1853E7}</Project>
+      <Name>tearing</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Kasug\Code\LearnOpenGL\Libaray\tests\threads.vcxproj">
+      <Project>{A20906F9-EB9C-31F2-A1C0-693DAABD3A4B}</Project>
+      <Name>threads</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Kasug\Code\LearnOpenGL\Libaray\tests\timeout.vcxproj">
+      <Project>{3D891AE6-B5C2-3F7A-9B53-72E06C9229E9}</Project>
+      <Name>timeout</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Kasug\Code\LearnOpenGL\Libaray\tests\title.vcxproj">
+      <Project>{8AA4E17B-7848-3533-B238-5D00EA6C8520}</Project>
+      <Name>title</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Kasug\Code\LearnOpenGL\Libaray\tests\vulkan.vcxproj">
+      <Project>{C5D68C76-50B8-3288-BD9D-E3A5D50336A0}</Project>
+      <Name>vulkan</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Kasug\Code\LearnOpenGL\Libaray\examples\wave.vcxproj">
+      <Project>{AA2308CC-60D3-3C47-A0EB-4E789D140D50}</Project>
+      <Name>wave</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Kasug\Code\LearnOpenGL\Libaray\tests\windows.vcxproj">
+      <Project>{463F08B3-079C-3684-BA3F-B73A1F8343DD}</Project>
+      <Name>windows</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
