@@ -1,5 +1,6 @@
-vs
-*.vs
+Debug
+v15
+.vs
 # Prerequisites
 *.d
 
