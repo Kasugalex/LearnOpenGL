@@ -1,5 +1,5 @@
 # LearnOpenGL
-Some notes and codes about learning OpenGL
+Some notes and code about learning OpenGL
 
 Tutroial:   https://learnopengl.com   
 GLFW:       https://www.glfw.org/download.html      
