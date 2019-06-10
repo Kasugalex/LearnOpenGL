@@ -61,6 +61,9 @@ int main()
 		glfwSwapBuffers(window);
 		//输入输出事件,否则无法对窗口进行交互
 		glfwPollEvents();
+
+		glClearColor(0.5f, 0.3f, 0.3f, 1.0f);
+		glClear(GL_COLOR_BUFFER_BIT);
 	}
 
 	//终止渲染 关闭并清理glfw本地资源
